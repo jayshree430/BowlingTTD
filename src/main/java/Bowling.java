@@ -15,7 +15,7 @@ public class Bowling {
         int score = 0;
         int count = 0;
         for (int i =0; i<10; i++){
-            if(isStriKe(count)){
+            if(isStrike(count)){
                 score +=10 + totalRolls[count+1] + totalRolls[count+2];
                 count++;
             }
@@ -32,7 +32,7 @@ public class Bowling {
     public boolean isSpare(int count){
         return totalRolls[count] + totalRolls[count+1] ==10;
     }
-    public boolean isStriKe(int count){
+    public boolean isStrike(int count){
         return totalRolls[count]  ==10;
     }
 }

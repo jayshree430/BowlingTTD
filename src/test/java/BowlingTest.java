@@ -31,4 +31,5 @@ public class BowlingTest {
         game.roll(10,10,10,10,10,10,10,10,10,10,10,10);
         Assertions.assertEquals(300, game.score());
     }
+
 }
