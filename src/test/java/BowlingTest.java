@@ -32,4 +32,9 @@ public class BowlingTest {
         Assertions.assertEquals(300, game.score());
     }
 
+    @Test
+    public void checkAllRollsAreSpare(){
+        game.roll(5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5);
+        Assertions.assertEquals(150, game.score());
+    }
 }
