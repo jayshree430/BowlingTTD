@@ -15,5 +15,15 @@ public class BowlingTest {
         Assertions.assertEquals(0, game.score());
     }
 
+    @Test
+    public void checkAllRollsAreOnes(){
+        game.roll(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
+        Assertions.assertEquals(20, game.score());
+    }
+    @Test
+    public void checkAllRollsAre9FollowedByAMiss(){
+        game.roll(9,9,9,9,9,9,9,9,9,9);
+        Assertions.assertEquals(90, game.score());
 
+    }
 }
